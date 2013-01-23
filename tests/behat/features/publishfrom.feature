@@ -17,7 +17,6 @@ Feature: Greeting plugin standart features BDD
 			Then I select "Friend FullName(user-friend)" from "publishfrom"
 			Then I press element by css "#submit_topic_publish"
 			Then I wait "2000"
-			Then print last response
-			Then the response should contain "user-friend"
+			Then the response should contain "<a href=\"http://livestreet.test/profile/user-friend/\" rel=\"author\">user-friend</a>"
 
 
