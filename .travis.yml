@@ -34,8 +34,6 @@ before_script:
   - sudo sed -i s/sql-mode/#sql-mode/ /etc/mysql/my.cnf
   - sudo /etc/init.d/mysql restart
   - ln -s `pwd`/tests/behat/behat.yml ./plugins/publishfrom/tests/behat/behat.yml
-  - ls -l ./plugins/publishfrom/tests/behat
-  - cat ./plugins/publishfrom/tests/behat/behat.yml
   - sleep 5
 
   - rm -rf ./install

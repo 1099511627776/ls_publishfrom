@@ -11,7 +11,7 @@ $config = array();
 //$config['user_ids'] = array();
 
 /*выражение от и до */
-$config['user_id_expression'] = '13-900';
+$config['user_id_expression'] = '2-900';
 
 /*Имя элемента формы*/
 $config['select_name'] = 'publishfrom';

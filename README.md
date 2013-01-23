@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/1099511627776/ls_publishfrom.png?branch=master)](https://travis-ci.org/1099511627776/ls_publishfrom)
+
 ls_publishfrom
 ==============
 
