@@ -31,3 +31,9 @@ The easiest way to use this API is to modify topic_part_header.tpl of any LS Tem
             		<li>Last Edit: {$oTopic->getLastEditUser()->getLogin()}</li>
 				{/if}
             {/if}	
+
+
+Примеры использования
+---------------------
+
+Используется, теструется и дописывается на сайте: http://goloskarpat.info/
