@@ -11,10 +11,12 @@ class PluginPublishfrom extends Plugin {
 	
 	public function Activate() {
 		$this->ExportSQL(dirname(__FILE__).'/install.sql');
+		return true;
 	}
 	
 	public function Deactivate() {
 		$this->ExportSQL(dirname(__FILE__).'/deinstall.sql');
+		return true;
 	}
 	
 	public function Init() {
