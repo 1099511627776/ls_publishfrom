@@ -21,7 +21,11 @@ class PluginPublishfrom_ModulePublishfrom_MapperPublishfrom extends Mapper {
 		}
 		if($logins_in||$ids_in){
 			$or = ($logins_in&&$ids_in?' OR ':'');
-			$sql = "SELECT * FROM ".Config::Get('db.table.user')." WHERE ".($logins_in?"user_login IN ($logins_in)":'').$or.($ids_in?"user_id IN ($ids_in)":'');
+			$sql = "SELECT * FROM ".Config::Get('db.table.user')." WHERE 1=1 ";
+			if($rating = Config::Get('plugin.publishfrom.limit_rating_min')){
+				$sql .= "AND user_rating > ".intval($rating);
+			}				
+			$sql .= " AND ".($logins_in?"user_login IN ($logins_in)":'').$or.($ids_in?"user_id IN ($ids_in)":'');
 			return $this->oDb->select($sql);
 		}
 		return array();
