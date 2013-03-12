@@ -16,5 +16,7 @@ $config['user_id_expression'] = '2-90000';
 /*Имя элемента формы*/
 $config['select_name'] = 'publishfrom';
 
-$config['limit_rating_min'] = 5;
+/* Минимальное количество балов для отображения в списке*/
+
+$config['limit_rating_min'] = null;
 return $config;
